@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PIT4Casus", "PIT4Casus\PIT4Casus.csproj", "{3883AA6A-5FA7-4C13-B9B5-2707A5E47003}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BU", "BU\BU.csproj", "{BFB05F7D-C66A-479F-9713-D301259673B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CC", "CC\CC.csproj", "{62571640-B521-4570-A898-0ECF36758FAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3883AA6A-5FA7-4C13-B9B5-2707A5E47003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3883AA6A-5FA7-4C13-B9B5-2707A5E47003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3883AA6A-5FA7-4C13-B9B5-2707A5E47003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3883AA6A-5FA7-4C13-B9B5-2707A5E47003}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFB05F7D-C66A-479F-9713-D301259673B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFB05F7D-C66A-479F-9713-D301259673B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFB05F7D-C66A-479F-9713-D301259673B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFB05F7D-C66A-479F-9713-D301259673B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62571640-B521-4570-A898-0ECF36758FAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62571640-B521-4570-A898-0ECF36758FAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62571640-B521-4570-A898-0ECF36758FAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62571640-B521-4570-A898-0ECF36758FAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
