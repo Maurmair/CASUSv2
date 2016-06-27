@@ -40,13 +40,13 @@ namespace PIT4Casus {
         protected global::System.Web.UI.WebControls.HyperLink LogStatus;
         
         /// <summary>
-        /// DBUsername control.
+        /// LabelDBUser control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label DBUsername;
+        protected global::System.Web.UI.WebControls.Label LabelDBUser;
         
         /// <summary>
         /// LabelUsername control.

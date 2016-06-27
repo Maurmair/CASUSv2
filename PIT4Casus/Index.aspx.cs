@@ -21,7 +21,10 @@ namespace PIT4Casus
             if (new Movies().FilmNaam(zoekterm))
             {
                 //film gevonden
-                ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('Gevonden');", true);
+                //ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('Gevonden');", true);
+                new Movies().FilmVullen(zoekterm);
+                
+                LabelNaam.Text = zoekterm;     
             }
             else
             {

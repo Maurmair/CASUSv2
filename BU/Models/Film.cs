@@ -19,6 +19,22 @@ namespace BU
                {
                    Film record = new Film();
                    record.Naam = item.Naam;
+                   record.AndereNaam = item.AndereNaam;
+                   record.Versie = item.Versie;
+                   record.Taalnaam = item.Taalnaam;
+                   record.Verhaal = item.Verhaal;
+                   record.IMDBRate = item.IMDBRate;
+                   record.Jaar = item.Jaar;
+                   record.Land = item.Land;
+                   record.Kleur = item.Kleur;
+                   record.ZW = item.ZW;
+                   record.KleurZW = item.KleurZW;
+                   record.Kijkwijzer = item.Kijkwijzer;
+                   record.PersRate = item.PersRate;
+                   record.Jaar = item.Jaar;
+                   record.IMDBNummer = item.IMDBNummer;
+                   record.Speelduur = item.Speelduur;
+                   record.ToegevoegdDate = item.ToegevoegdDate;
                    return record;
                }
                return null;

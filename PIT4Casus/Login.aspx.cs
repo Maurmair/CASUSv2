@@ -23,6 +23,18 @@ namespace PIT4Casus
             {
                 //login succes
                 ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('Aangemeld');", true);
+                if (username == "admin")
+                {
+                    Session["usertype"] = "admin";
+                    Session["loggedin"] = "true";
+                    LabelDBUser.Text = username;
+                }
+                if (username == "user")
+                {
+                    Session["usertype"] = "user";
+                    Session["loggedin"] = "true";
+                    LabelDBUser.Text = username;
+                }
             }
             else 
             {

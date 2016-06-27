@@ -9,6 +9,9 @@
         .auto-style1 {
             width: 100%;
         }
+        .auto-style2 {
+            height: 26px;
+        }
     </style>
 </head>
 <body>
@@ -32,6 +35,164 @@
                 <td>
                     <asp:Button ID="ButtonSearch" runat="server" OnClick="ButtonSearch_Click" Text="Zoeken" />
                 </td>
+            </tr>
+        </table>
+        <table id="TableResult" class="auto-style1">
+            <tr>
+                <td>
+                    <asp:Label ID="LabelNaam" runat="server"></asp:Label>
+                </td>
+                <td>
+                    <asp:Label ID="LabelJaar" runat="server"></asp:Label>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <table class="auto-style1" id="TableMovieResult">
+            <tr>
+                <td>
+                    <asp:Label ID="LabelNaam0" runat="server" Text="Naam:"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBoxNaam" runat="server" ReadOnly="True"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>
+                    <asp:Label ID="LabelIMDBNR" runat="server" Text="IMDB nummer:"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBoxIMDBnr" runat="server" ReadOnly="True"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <asp:Label ID="LabelAndereNaam" runat="server" Text="Andere naam:"></asp:Label>
+                </td>
+                <td class="auto-style2">
+                    <asp:TextBox ID="TextBox1" runat="server" ReadOnly="True"></asp:TextBox>
+                </td>
+                <td class="auto-style2">
+                    <asp:Label ID="LabelJaar0" runat="server" Text="Jaar"></asp:Label>
+                </td>
+                <td class="auto-style2">
+                    <asp:TextBox ID="TextBoxJaar" runat="server" ReadOnly="True"></asp:TextBox>
+                </td>
+                <td class="auto-style2">
+                    <asp:Label ID="LabelSpeelduur" runat="server" Text="Speelduur:"></asp:Label>
+                </td>
+                <td class="auto-style2">
+                    <asp:TextBox ID="TextBoxSpeelduur" runat="server" ReadOnly="True"></asp:TextBox>
+                </td>
+                <td class="auto-style2"></td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="LabelVersie" runat="server" Text="Versie:"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBoxVersie" runat="server" ReadOnly="True"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:Label ID="LabeLand" runat="server" Text="Land:"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBoxLand" runat="server" ReadOnly="True"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:Label ID="LabelToegevoegd" runat="server" Text="Toegevoegd:"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBoxToegevoegd" runat="server" ReadOnly="True"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="LabelRegisseur" runat="server" Text="Regisseur:"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBoxRegisseur" runat="server" ReadOnly="True"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:Label ID="LabelKleur" runat="server" Text="Kleur:"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBoxKleur" runat="server" ReadOnly="True"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="LabelGesprokenTaal" runat="server" Text="Gesproken taal:"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBoxGTaal" runat="server" ReadOnly="True"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:Label ID="LabelKijkwijzer" runat="server" Text="Kijkwijzer:"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBoxKijkwijzer" runat="server" ReadOnly="True"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <asp:Label ID="LabelVerhaal" runat="server" Text="Verhaal:"></asp:Label>
+                </td>
+                <td class="auto-style2">
+                    <asp:TextBox ID="TextBoxVerhaal" runat="server" ReadOnly="True" Width="113px"></asp:TextBox>
+                </td>
+                <td class="auto-style2"></td>
+                <td class="auto-style2"></td>
+                <td class="auto-style2"></td>
+                <td class="auto-style2"></td>
+                <td class="auto-style2"></td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="LabelIMDBRate" runat="server" Text="IMDB waardering:"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBoxIMDBrate" runat="server" ReadOnly="True"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:Label ID="LabelPersRate" runat="server" Text="Persoonlijke waardering:"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBoxPersRate" runat="server" ReadOnly="True"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="LabelActeurs" runat="server" Text="Acteurs:"></asp:Label>
+                </td>
+                <td>
+                    <asp:ListBox ID="ListBoxActeurs" runat="server" Rows="2"></asp:ListBox>
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
             </tr>
         </table>
     </form>
