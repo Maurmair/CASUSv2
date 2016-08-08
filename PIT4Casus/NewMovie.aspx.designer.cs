@@ -10,7 +10,7 @@
 namespace PIT4Casus {
     
     
-    public partial class Login {
+    public partial class NewMovie {
         
         /// <summary>
         /// form1 control.
@@ -58,48 +58,12 @@ namespace PIT4Casus {
         protected global::System.Web.UI.WebControls.Label DBUsername;
         
         /// <summary>
-        /// LabelUsername control.
+        /// LabelTestVis control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelUsername;
-        
-        /// <summary>
-        /// TextBoxUserName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxUserName;
-        
-        /// <summary>
-        /// LabelPassword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelPassword;
-        
-        /// <summary>
-        /// TextBoxPassword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxPassword;
-        
-        /// <summary>
-        /// ButtonLogin control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonLogin;
+        protected global::System.Web.UI.WebControls.Label LabelTestVis;
     }
 }

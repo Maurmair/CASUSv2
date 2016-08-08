@@ -40,13 +40,22 @@ namespace PIT4Casus {
         protected global::System.Web.UI.WebControls.HyperLink LogStatus;
         
         /// <summary>
-        /// DBUsername control.
+        /// HyperLinkNewMovie control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label DBUsername;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLinkNewMovie;
+        
+        /// <summary>
+        /// LabelDBUsername control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelDBUsername;
         
         /// <summary>
         /// TextBoxSearch control.
@@ -56,6 +65,15 @@ namespace PIT4Casus {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBoxSearch;
+        
+        /// <summary>
+        /// btn_save control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_save;
         
         /// <summary>
         /// ButtonSearch control.
@@ -83,6 +101,15 @@ namespace PIT4Casus {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelJaar;
+        
+        /// <summary>
+        /// GridView1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
         /// LabelNaam0 control.

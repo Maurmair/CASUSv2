@@ -227,6 +227,10 @@
             <End Role="Gebruikers" EntitySet="GebruikerSet" />
             <End Role="Review" EntitySet="ReviewSet" />
           </AssociationSet>
+          <AssociationSet Name="ReviewFilm" Association="BU.ReviewFilm">
+            <End Role="Review" EntitySet="ReviewSet" />
+            <End Role="Film" EntitySet="FilmSet" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="Film">
           <Key>
@@ -260,6 +264,8 @@
           <NavigationProperty Name="Regisseur" Relationship="BU.RegisseurFilms" FromRole="Films" ToRole="Regisseur" />
           <Property Name="RegisseurRegID" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Acteur" Relationship="BU.ActeurFilms" FromRole="Films" ToRole="Acteur" />
+          <NavigationProperty Name="Review" Relationship="BU.ReviewFilm" FromRole="Film" ToRole="Review" />
+          <Property Name="ReviewReviewID" Type="Int32" Nullable="true" />
         </EntityType>
         <EntityType Name="Gebruiker">
           <Key>
@@ -300,6 +306,7 @@
           <Property Name="FilmID" Type="Int32" Nullable="false" />
           <Property Name="Recensie" Type="String" Nullable="false" />
           <NavigationProperty Name="Gebruikers" Relationship="BU.GebruikersReview" FromRole="Review" ToRole="Gebruikers" />
+          <NavigationProperty Name="Film" Relationship="BU.ReviewFilm" FromRole="Review" ToRole="Film" />
         </EntityType>
         <EntityType Name="Rol">
           <Key>
@@ -326,7 +333,7 @@
           <End Type="BU.Film" Role="Films" Multiplicity="*" />
         </Association>
         <Association Name="RolActeur">
-          <End Type="BU.Rol" Role="Rol" Multiplicity="1" />
+          <End Type="BU.Rol" Role="Rol" Multiplicity="*" />
           <End Type="BU.Acteur" Role="Acteur" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Rol">
@@ -338,8 +345,20 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="GebruikersReview">
-          <End Type="BU.Gebruiker" Role="Gebruikers" Multiplicity="*" />
+          <End Type="BU.Gebruiker" Role="Gebruikers" Multiplicity="0..1" />
           <End Type="BU.Review" Role="Review" Multiplicity="*" />
+        </Association>
+        <Association Name="ReviewFilm">
+          <End Type="BU.Review" Role="Review" Multiplicity="*" />
+          <End Type="BU.Film" Role="Film" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="Review">
+              <PropertyRef Name="ReviewID" />
+            </Principal>
+            <Dependent Role="Film">
+              <PropertyRef Name="ReviewReviewID" />
+            </Dependent>
+          </ReferentialConstraint>
         </Association>
       </Schema>
     </edmx:ConceptualModels>

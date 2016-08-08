@@ -67,6 +67,7 @@
   <ItemGroup>
     <Content Include="GernreSearch.aspx" />
     <Content Include="MoviePage.aspx" />
+    <Content Include="NewMovie.aspx" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -115,6 +116,13 @@
     </Compile>
     <Compile Include="MoviePage.aspx.designer.cs">
       <DependentUpon>MoviePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewMovie.aspx.cs">
+      <DependentUpon>NewMovie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewMovie.aspx.designer.cs">
+      <DependentUpon>NewMovie.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Result.aspx.cs">

@@ -50,9 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Acteur.cs">
-      <DependentUpon>BU.tt</DependentUpon>
-    </Compile>
     <Compile Include="BU.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -68,28 +65,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BU.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Film.cs">
-      <DependentUpon>BU.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Gebruiker.cs">
-      <DependentUpon>BU.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\Acteur.cs" />
+    <Compile Include="Models\DataDictProperties.cs" />
     <Compile Include="Models\Film.cs" />
     <Compile Include="Models\Gebruiker.cs" />
     <Compile Include="Models\Regisseur.cs" />
     <Compile Include="Models\Review.cs" />
     <Compile Include="Models\Rol.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Regisseur.cs">
-      <DependentUpon>BU.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Review.cs">
-      <DependentUpon>BU.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Rol.cs">
-      <DependentUpon>BU.tt</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="BU.edmx">

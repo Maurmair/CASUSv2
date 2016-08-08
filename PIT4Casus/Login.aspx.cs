@@ -26,14 +26,16 @@ namespace PIT4Casus
                 if (username == "admin")
                 {
                     Session["usertype"] = "admin";
-                    Session["loggedin"] = "true";
-                    LabelDBUser.Text = username;
+                    Session["username"] = username;
+                    Session["loggedin"] = true;
+                    //LabelDBUser.Text = username;
                 }
                 if (username == "user")
                 {
                     Session["usertype"] = "user";
-                    Session["loggedin"] = "true";
-                    LabelDBUser.Text = username;
+                    Session["username"] = username;
+                    Session["loggedin"] = true;
+                   // LabelDBUser.Text = username;
                 }
             }
             else 
